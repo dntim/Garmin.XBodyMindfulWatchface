@@ -1,0 +1,51 @@
+# .gitignore for Visual Studio Code
+.vscode/
+
+# Garmin device-specific files
+*.prg
+*.fit
+*.gpx
+*.fit.gz
+
+# Monkey C specific files
+build/
+bin/
+.settings/
+
+# Logs
+logs/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Ignore Garmin SDK
+GarminSDK/
+
+# Ignore user-specific settings
+*.user
+
+# Ignore MacOS specific files
+.DS_Store
