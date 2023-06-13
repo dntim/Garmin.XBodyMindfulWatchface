@@ -78,6 +78,11 @@ class XBodyMindfulWatchfaceView extends WatchUi.WatchFace {
         view = View.findDrawableById("DateLabel3") as Text;
         view.setText(info.month);
 
+        // Update the battery charge label
+        var batteryChargeLevel = System.getSystemStats().battery;
+        view = View.findDrawableById("BatteryChargeLabel") as Text;
+        view.setText(batteryChargeLevel.format("%d") + "%");
+
         // Update the dntim label
         view = View.findDrawableById("AuthorLabel") as Text;
         view.setText("@dntim");
