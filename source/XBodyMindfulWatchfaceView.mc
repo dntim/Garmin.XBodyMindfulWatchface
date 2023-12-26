@@ -137,6 +137,11 @@ class XBodyMindfulWatchfaceView extends WatchUi.WatchFace {
         // view.setColor(Graphics.COLOR_LT_GRAY as Number);
         view.setText(bbLastChargedValue);
 
+        // Get current weather
+        var currentTemperature = Weather.getCurrentConditions().temperature;
+        view = View.findDrawableById("CurrentWeatherLabel") as Text;
+        view.setText(currentTemperature.toString() + "°");
+
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }
